@@ -163,3 +163,7 @@ body {
 .col-sm-4.projects:hover {
   background-color: #f1f3f4;
 }
+
+.project-title {
+  cursor: pointer;
+}
