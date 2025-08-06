@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="scroll-down-animation.css" />
+    <link rel="stylesheet" href="modal.css">
+
+  
+    <title>Nhat Vu's Porfolio</title>
+  </head>
+  <body>
+    <section>
+      <div class="navbar-container">
+        <nav class="navbar">
+          <div class="container-fluid d-flex justify-content-center">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav
+      </div>
+    </section>
+
+
+    <div class="hero text-center">
+      <h2>Nhat Vu</h2>
+      <h3>Web Developer | Designer | Creator</h3>
+      <p>I turn ideas into beautiful, functional experiences.</p>
+      <div
+        class="d-flex flex-column align-items-center gap-2""
+      >
+        <div>
+          <button class="btn-google btn-primary-google">View my work</button>
+          <button class="btn-google btn-secondary-google">Contact me</button>
+        </div>
+        <div>
+          <div class="down-icon" role="button" aria-label="scroll down" id="scroll-down">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="down-arrow"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container-fluid project-header" id="about">
+          <h2>Notible Work</h2>
+        </div>
+
+    <div class="container-fluid projects" id="projects">
+      <div class="row">
+        <div class="col-sm-4 border p-3 text-center projects d-flex flex-column align-items-center">
+          <h2 class="project-title">Astronomy Picture of the Day</h2>
+          <img src="/public/nasa-apod.png" alt="NASA APOD NEWS" class="img-fluid">
+          <p>NASA’s Astronomy Picture of the Day showcases breathtaking photographs of the cosmos.
+
+</p>
+<button class="btn btn-google learn-more-btn mt-auto text-center" 
+        data-bs-toggle="modal" 
+        data-bs-target="#projectModal" 
+        data-title="Astronomy Picture of the Day" 
+        data-description="NASA‑APOD‑News is a simple web app that displays NASA's Astronomy Picture of the Day using their public API. It fetches and showcases daily space images along with their official explanations in a clean, responsive layout. Built with React and TailwindCSS, this project highlights my skills in API integration, async data handling, and creating visually engaging interfaces."
+        data-link="https://coconhat.github.io/NASA-APOD-News/">
+  Learn More
+</button>
+        </div>
+       
+        <div class="col-sm-4 border p-3 text-center projects d-flex flex-column align-items-center">
+          <h2 class="project-title">
+Mediatrix's ACUP
+          </h2>
+            <img src="/public/ACUP.png" alt="ACUP" class="img-fluid">
+          <p>A finance and communication frontend for the mediatrix ancillary department</p>
+<button class="btn btn-google learn-more-btn mt-auto text-center" 
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="Mediatrix's Ancillary Communication and Updates Platform"
+        data-description="A finance and communication frontend for the Mediatrix Ancillary department."
+        data-link="https://github.com/bmsj23/mediatrix-ancillary">
+        
+  Learn More
+</button></div>
+        <div class="col-sm-4 border p-3 text-center projects d-flex flex-column align-items-center">
+          <h2 class="project-title">BrainRot Translator</h2>
+          <img src="/public/brainrotter.png" alt="BrainRot Translator" class="img-fluid">
+          <p>BrainRot Translator is a tool designed to convert text into a unique, playful language that mimics the style of "brainrot" memes.</p>
+<button class="btn btn-google learn-more-btn mt-auto text-center"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="BrainRot Translator"
+        data-description="BrainRot Translator is a tool designed to convert text into a unique, playful language that mimics 'brainrot' memes."
+        data-link="https://coconhat.github.io/brainrot-converter/">
+  Learn More
+</button>        </div>
+      </div>
+    </div>
+    
+
+<section id="contact">
+  <div class="container-sm footer">
+    <div>
+      <h3 id="footer-heading">Like what you see?</h3>
+      <h5 id="footer-subtext">Let's connect and discuss how I can help you achieve your goals.</h5>
+    </div>
+    <div class="d-flex justify-content-end m-3">
+      <button class="btn btn-primary-google getInTouch">Get in touch.</button>
+    </div>
+  </div>
+
+  <!-- Contact form container, initially collapsed and centered -->
+  <div id="contact-expand-wrapper" class="d-flex justify-content-center id="contact">
+    <div id="contact-expand" class="contact-expand mx-auto mt-4" aria-hidden="true">
+      <div class="card shadow-sm p-4" style="max-width: 500px;">
+        <h4 id="form-heading">Say hi!</h4>
+        <p id="form-subtext">Drop me a message and I’ll get back to you.</p>
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input required type="text" class="form-control" id="name" placeholder="Your name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input required type="email" class="form-control" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea required class="form-control" id="message" rows="3" placeholder="What’s up?"></textarea>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+              Submit
+            </button>
+            <button type="button" id="close-form" class="btn btn-outline-secondary">Close</button>
+          </div>
+          <div id="status" class="mt-2" style="display:none;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body" id="projectModalBody"></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-google learn-more-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#projectModal"
+        data-title="BrainRot Translator"
+        data-description="This is a cool tool for meme lovers."
+        >
+  Learn More
+</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+W
+
+    <script src="email-validation.js"></script>
+    <script src="change-color.js"></script>
+    <script src="modal-content.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

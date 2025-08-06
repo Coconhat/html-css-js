@@ -1,0 +1,23 @@
+.modal-title {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.modal-body {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+#goToProjectBtn {
+  margin: 0 20px 20px auto;
+  display: block;
+  background-color: #4b7bec;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#goToProjectBtn:hover {
+  background-color: #3a63c7;
+}
