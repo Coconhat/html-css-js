@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     status.style.color = "green";
     status.style.display = "block";
-    status.textContent = "Thanks! Message received (mocked, no backend).";
+    status.textContent = "Thanks! Message received";
 
     alert("Message sent successfully!");
 
